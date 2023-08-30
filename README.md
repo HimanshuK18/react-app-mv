@@ -5,8 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `npm start`
+### `npm run install`
+### `npm run build`
+### `npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -27,20 +28,21 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. As a user (of the application) I can see my current location on a Google map
+2. As a user I can save a short note at my current location
+3. As a user I can see notes that I have saved at the location they were saved
+on the map
+4. As a user I can see the location, text, and user-name of notes other users
+have saved
+5. As a user I have the ability to search for a note based on contained text or
+user-name
+6. Use the menu at the top left to nagigate, for login page just give any dummy value
 
-### `npm run eject`
+Docker
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The app is served using Nginx server and package through the docker container.
+Use these commands to run a production build, if docker is intalled on the system.
+Then browse to http://localhost:8080
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+ ### `npm run image_build`
+ ### `npm run run_image`

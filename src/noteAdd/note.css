@@ -1,0 +1,59 @@
+.add-note-container {
+  background-color: rgb(21, 132, 21);
+}
+
+.add-note-title {
+  margin-top: 10px;
+  margin-left: 100px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.red-asterisk {
+  color: red;
+}
+.form-row {
+  margin-top: 10px;
+  margin-left: 10px;
+  flex-basis: 50%;
+  margin-bottom: 10px;
+}
+
+.form-label {
+  font-size: 16px;
+  color: #fff;
+}
+
+.form-input {
+  width: 50%;
+  padding: 2px;
+  font-size: 16px;
+}
+
+.save-button {
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  text-align: center;
+}
+
+.divButton {
+  margin-left: 100px;
+}
+
+/* Media Queries */
+@media (min-width: 770px) {
+  .form-row {
+    flex-basis: 50%;
+    margin-bottom: 0;
+  }
+}
