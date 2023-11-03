@@ -4,18 +4,19 @@ import { render, fireEvent } from '@testing-library/react';
 import MapComponent from './map';
 import { Note } from '../note/Note';
 
+global.fetch = jest.fn();
+
+jest.mock('react-error-boundary');
 const notes: Note[] = [
   { id: 1, lat: 37.7749, lng: -122.4194, note: 'Note 1', username: 'User 1' },
   { id: 2, lat: 34.0522, lng: -118.2437, note: 'Note 2', username: 'User 2' }
 ];
 const currentLocation = { lat: 37.7749, lng: -122.4194 };
 
-const useErrorBoundary = jest.fn();
-jest.mock('useErrorBoundary');
+
 const setOpen = jest.fn();
 beforeEach(() => {
   setOpen.mockClear();
-  useErrorBoundary.mockReturnValue({ showBoundary: true });
 });
 
 describe('MapComponent', () => {

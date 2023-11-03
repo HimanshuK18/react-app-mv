@@ -3,7 +3,7 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useQuery, gql } from '@apollo/client';
 import Avatar from '@mui/material/Avatar';
 
-export const GridData: React.FC = () =>  {
+export const GridData: React.FC = () => {
     const columns: GridColDef[] = [
         { field: 'id', headerName: 'ID', width: 70 },
         { field: 'name', headerName: 'Name', width: 130 },
@@ -15,7 +15,7 @@ export const GridData: React.FC = () =>  {
             renderCell: (params) => {
                 return (
                     <>
-                        <Avatar src={params.formattedValue} sx={{ width: 56, height: 56 }} />
+                        <Avatar alt='description' src={params.formattedValue} sx={{ width: 56, height: 56 }} />
                     </>
                 );
             }
@@ -51,6 +51,8 @@ export const GridData: React.FC = () =>  {
                 checkboxSelection
             />
         </div>
+
+        
     );
 }
 

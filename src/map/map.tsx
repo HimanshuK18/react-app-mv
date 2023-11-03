@@ -65,7 +65,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
                 <div data-testid="add-note-button">
                     <button onClick={addnew}>Add Note</button>
                 </div>
-                <div data-testid="add-note-button">
+                <div data-testid="add-note-button-fallback">
                     <button onClick={showError}>Error Fallback</button>
                 </div>
                 <NoteAddComponent close={closeDialog} lat={currentLocation.lat} lng={currentLocation.lng} Opened={open}></NoteAddComponent>

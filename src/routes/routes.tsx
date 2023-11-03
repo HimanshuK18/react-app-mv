@@ -5,6 +5,9 @@ import App from '../App';
 import BasicMenu from '../menu/menu';
 import NoPage from "../nopage/NoPage";
 import { GridData } from '../datagrid/dataGrid';
+import { Controls } from '../controls/controls';
+import  ProductPage  from '../hooks/useCallback';
+import { UseDeferredValue } from '../hooks/useDeferredValue';
 import ProtectedRoute from '../secureroutes/secureRoute';
 
 
@@ -19,6 +22,9 @@ function SetRoutes() {
                 <Route path="/" element={<App />} />
                 <Route path="*" element={<NoPage />} />
                 <Route path="grid" element={<GridData />} />
+                <Route path="controls" element={<Controls />} />
+                <Route path="usedeferedvalue" element={<UseDeferredValue />} />
+                <Route path="usecallback" element={<ProductPage productId={'rr'} referrer={'tt'} theme={'dark'} />} />
                 <Route path='tictac' element={
                     <ProtectedRoute>
                         <React.Suspense fallback={<div>...Loading</div>}>

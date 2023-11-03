@@ -1,3 +1,5 @@
+import React from 'react';
+
 function MyFallbackComponent({ error, resetErrorBoundary } :{error: any, resetErrorBoundary: () => void}) {
     return (
       <div role="alert">

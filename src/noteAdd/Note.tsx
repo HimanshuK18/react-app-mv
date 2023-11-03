@@ -56,7 +56,7 @@ const NoteAddComponent: React.FC<NoteProps> = (props: NoteProps) => {
   };
 
   return (<>
-    <Dialog open={dialogOpen} onClose={handleClose}>
+    <Dialog open={dialogOpen} onClose={handleClose} data-testid='note-add-dialog'>
       <div className="add-note-container" data-testid='note-add'>
         <h3 className="add-note-title">Add Note</h3>
         <form className="form-container" onSubmit={handleNoteData}>

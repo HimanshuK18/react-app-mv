@@ -36,7 +36,10 @@ export default function BasicMenu() {
             >
                 <MenuItem component={Link} to="/" onClick={handleClose}>Home</MenuItem>
                 <MenuItem component={Link} to="/tictac" onClick={handleClose}>Tic Tac Toe</MenuItem>
+                <MenuItem component={Link} to="/usecallback" onClick={handleClose}>Usee CallBack</MenuItem>
+                <MenuItem component={Link} to="/usedeferedvalue" onClick={handleClose}>Use Defered Value</MenuItem>
                 <MenuItem component={Link} to="/grid" onClick={handleClose}>Grid</MenuItem>
+                <MenuItem component={Link} to="/controls" onClick={handleClose}>Controls</MenuItem>
 
             </Menu>
         </div>
