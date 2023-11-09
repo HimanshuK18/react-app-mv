@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext, ChangeEvent } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 
 export const Controls: React.FC = () => {
     const countries = [

@@ -1,0 +1,37 @@
+.divCenter{
+    border: 2px solid #000; /* Change the border properties as desired */
+    padding: 20px; /* Add padding if needed */
+    text-align: center; /* Center the content horizontally */
+    background-color: #f0f0f0;   
+}
+.formStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.row {
+    flex: 1;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Add a bottom border to separate rows */
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}

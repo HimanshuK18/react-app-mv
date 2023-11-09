@@ -15,7 +15,7 @@
  * 
  * 
  * This means that if we change the name our deferredName will wait to update until after the UI has had
- *  time to update with the new name value in the input field. If we continue to change our input in a 
+ * time to update with the new name value in the input field. If we continue to change our input in a 
  * short period of time (for example by typing quickly in the input) the deferredName value will 
  * continue to stay unchanged and our list will not update. The only thing that will update is the name 
  * variable until there is a pause in the name value changing. Once we stop typing then React will 
@@ -58,4 +58,17 @@ const largeList = [{ name: "aduil" }, { name: "sdas" },
 { name: "pdujil" }, { name: "fghf" },
 { name: "pgduil" }, { name: "ghghfps" },
 { name: "pdubil" }, { name: "ghghfghps" },
-{ name: "pdfuil" }, { name: "ghfsf" }];
+{ name: "pdfuil" }, { name: "ghfsf" },
+{ name: "zscdukw" }, { name: "fsdf" },
+{ name: "zdfukw" }, { name: "tdf" },
+{ name: "zdujkw" }, { name: "fsdf" },
+{ name: "zgdukw" }, { name: "tdsdfas" },
+{ name: "zduvkw" }, { name: "tdsdfsdas" },
+{ name: "zdfukw" }, { name: "tdfsf" },
+{ name: "jdukw" }, { name: "ghps" },
+{ name: "jscdukw" }, { name: "fghf" },
+{ name: "jdfukw" }, { name: "ghf" },
+{ name: "jdujkw" }, { name: "fghf" },
+{ name: "jgdukw" }, { name: "ghghfps" },
+{ name: "jduvkw" }, { name: "ghghfghps" },
+{ name: "jdfukw" }, { name: "ghfsf" }];
